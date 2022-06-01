@@ -1,3 +1,12 @@
+################## Terminatinf Namespace ############################
+
+
+kubectl get namespace <terminating-namespace> -o json > tmp.json
+
+delete finalizer
+
+kubectl replace --raw "/api/v1/namespaces/<namespace>/finalize" -f tmp.json
+
 ############## Nginx Version #######################
 
 kubectl exec -ti podname -n namespace -- /nginx-ingress-controller --version
