@@ -1,0 +1,8 @@
+CREATE USER 'tira'@'localhost' IDENTIFIED BY 'pass';
+GRANT ALL PRIVILEGES ON *.* TO 'tira'@'localhost' WITH GRANT OPTION;
+CREATE USER 'tira'@'172.18.25.1' IDENTIFIED BY 'Smart20@!20@@';
+GRANT ALL PRIVILEGES ON *.* TO 'tira'@'172.18.20.13' IDENTIFIED BY 'pass' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+
+CREATE USER 'appseed_db_usr'@'localhost' IDENTIFIED BY 'pass';
