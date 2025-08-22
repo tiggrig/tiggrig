@@ -3,5 +3,3 @@ docker rmi -f $(docker images -aq) && docker container rm $(docker container ls 
 
 docker image prune -a
 
-
-
